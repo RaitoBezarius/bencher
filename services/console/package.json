@@ -13,7 +13,7 @@
 		"dev": "npm run setup && export BENCHER_API_URL=http://127.0.0.1:61016 && export GITHUB_CLIENT_ID=Iv1.46f0fd7a007ef1af && astro dev --port 3000",
 		"start": "astro dev --port 3000",
 		"test": "npm run setup && vitest",
-		"build": "export $(cat .env.runtime) && npm run copy && astro build",
+		"build": "export $(cat .env.runtime) && npm run copy && npm run astro build",
 		"adapter": "node adapter.js",
 		"node": "npm ci && npm run adapter node && npm run build",
 		"netlify": "npm ci && npm run adapter netlify && npm run build",
